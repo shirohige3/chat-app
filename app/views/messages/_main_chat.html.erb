@@ -8,37 +8,7 @@
 </div>
 
 <div class="chat">
- <div class="main-chat">
-  <div class="upper-chat">
-    <div class="name">
-     Tom
-    </div>
-     <div class="date">
-      2020/3/31(wed) 12:20:30
-     </div>
-  </div>
-    <div class="lower-chat">
-     <div class="text">
-     おはよう
-     </div>
-    </div>
- </div>
-
- <div class="main-chat">
-  <div class="upper-chat">
-    <div class="name">
-     Tom
-    </div>
-    <div class="date">
-     2020/3/31(wed) 12:20:30
-    </div>
-  </div>
-   <div class="lower-chat">
-    <div class="text">
-     おはよう
-    </div>
-   </div>
- </div>
+ <%= render partial: "messages", collection: @messages %>
 </div>
 
 <%# <div class="form"> %>
