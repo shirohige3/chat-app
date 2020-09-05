@@ -23,7 +23,8 @@ module ChatApp
       g.helper false
       g.test_framework false
       
-      config.action_view.field_error_proc = Proc.new{ |html_tag, insrance| html_tag}
+      
     end
+    config.action_view.field_error_proc = Proc.new { |html_tag, instance| html_tag }
   end
 end

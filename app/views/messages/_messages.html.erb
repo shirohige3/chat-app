@@ -11,8 +11,9 @@
  </div>
  <div class="lower-message">
   <div class="message-content">
-  <%# 投稿したメッセージ内容を記述する %>
-<%= messages.content %>
+    <%# 投稿したメッセージ内容を記述する %>
+    <%= messages.content %>
   </div>
+<%= image_tag messages.image.variant(resize:'500x500'), class: 'message-image' if messages.image.attached?%>
  </div>
 </div>
